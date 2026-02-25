@@ -1,0 +1,16 @@
+@host = http://localhost:5192
+
+GET {{host}}
+
+###Listar Clientes
+GET {{host}}/api/restaurante/listar
+
+###Cadastrar Cliente
+POST {{host}}/api/restaurante/cadastrar
+Content-Type: application/json
+
+{
+    "nome" : "Enzo Xavier",
+    "telefone" : "41991056807",
+    "email" : "enzoxavierbiscaia@gmail.com"
+}
